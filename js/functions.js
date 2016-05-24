@@ -25,7 +25,7 @@ var questionAsked = function(userAccepted) {
       makeDrinkAnimation();
       answerFadeOut('#answer', 2000);
       displayDrink();
-      jackSparrow.restockPantry();
+      // jackSparrow.restockPantry();
     } else {
       currentQuestion = jackSparrow.getNextQuestion();
       nextQuestion();

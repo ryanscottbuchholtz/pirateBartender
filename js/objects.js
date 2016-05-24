@@ -41,6 +41,9 @@ Bartender.prototype = {
     this.userPreferences.push(ingredientType)
   },
   makeDrink: function() {
+    if(this.userPreferences.length == 0) {
+      return ("Ye like nothing at this bar. Get out!")
+    };
     var cocktailIngredientHoldingArray = [];
     var cocktailRecipe = [];
     for (var i = 0; i < this.userPreferences.length; i++) { //for as long as the number of items in the userPreference array
@@ -58,14 +61,24 @@ Bartender.prototype = {
         cocktailIngredientHoldingArray = []; //reset this array to blank and start over if more preferences remaining
         ingredientForDrink.quantity --;
       }
-    }
+    };
+    if(cocktailRecipe.length == 0) {
+      this.restockPantry();
+      this.userPreferences = [];
+      return ('The bar is out of ingredients! New supplies on the way.  Please re-order.');
+    };
+    if(this.userPreferences.length != cocktailRecipe.length ) {
+      this.restockPantry();
+      this.userPreferences = [];
+      return ('Bar supplies low. Ye get a  ') + cocktailRecipe.join(' with a ') + ('. Try ordering again!'); 
+    };
     this.userPreferences = []; //reset user preferences for next drink
     return cocktailRecipe.join(' with a '); //no more preferences? return a joined string
   },
   restockPantry: function() {
     for (var i = 0; i < this.bartendersPantry.stockItems.length; i++) {
       if (this.bartendersPantry.stockItems[i].quantity === 0) {
-        (this.bartendersPantry.stockItems[i].quantity = 3);
+        (this.bartendersPantry.stockItems[i].quantity = 1);
       }
     }
   }
