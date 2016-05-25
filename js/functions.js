@@ -81,11 +81,6 @@ var displayDrink = function() {
     $('.drink-output-background').delay(3000).fadeIn(1000);
 }
 
-var noDrink = function() {
-  $('.no-drink-being-made').fadeIn(1000);
-  $('#question-template').hide();
-}
-
 var hideStackedElements = function() {
   $('.drink-being-made').hide();
   $('.no-drink-being-made').hide();
