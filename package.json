@@ -1,0 +1,22 @@
+{
+  "name": "piratebartender",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryanscottbuchholtz/pirateBartender.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryanscottbuchholtz/pirateBartender/issues"
+  },
+  "homepage": "https://github.com/ryanscottbuchholtz/pirateBartender#readme",
+  "dependencies": {
+    "jquery": "^2.2.4"
+  }
+}
