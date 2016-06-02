@@ -1,9 +1,13 @@
+var $ = require('jquery');
+
+var functions = require('./functions');
+
 
 $(document).ready( function() {
-  hideStackedElements();
-  askQuestion();
-  checkResponse();
-  orderAnother();
+  functions.hideStackedElements();
+  functions.askQuestion();
+  functions.checkResponse();
+  functions.orderAnother();
 });
 
 
