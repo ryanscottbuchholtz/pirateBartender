@@ -7,13 +7,14 @@ var currentQuestion = jackSparrow.getNextQuestion();
 
 module.exports = {
 
-checkResponse: function() {
+  checkResponse: function() {
+    var self = this;
     $("#yes-button").click( function() {
-      this.questionAsked(true);
+      self.questionAsked(true);
     });
 
     $('#no-button').click( function() {
-      this.questionAsked(false);
+      self.questionAsked(false);
     }); 
   },
 
