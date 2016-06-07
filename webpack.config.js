@@ -15,9 +15,9 @@ var CopyWebpackPlugin = require('copy-webpack-plugin');
 module.exports = {
     entry: {
       main: [
-        path.resolve(__dirname, packageData.main)
-        // path.resolve(__dirname, 'node_modules/font-awesome-webpack/font-awesome.config.js'),
-        // path.resolve(__dirname, 'node_modules/animate-css-webpack/animate-css.config.js')
+        path.resolve(__dirname, packageData.main),
+        path.resolve(__dirname, 'node_modules/font-awesome-webpack/font-awesome.config.js'),
+        path.resolve(__dirname, 'node_modules/animate-css-webpack/animate-css.config.js')
       ]
     },
 
