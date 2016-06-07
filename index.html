@@ -1,56 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <script id="drink-template" type="text/template">
-    <p id="drink">{{drink}}</p>
-  </script>
-  <script id="answer-template" type="text/template">
-    <p id="answer">{{answer}}</p>
-  </script> 
-  <meta charset="UTF-8">
-  <link href='https://fonts.googleapis.com/css?family=IM+Fell+English+SC' rel='stylesheet' type='text/css'>
-  <title>Pirate Bartender</title>
-</head>
-<body>
-  <div class="body-wrap">
-    <div class="drink-output-background"></div>
-    <div class="drink-output">
-      <h2>Drink it fast and order another!</h2>
-      <p id="your-drink">Just for you:</p>
-      <div id="drink"></div>
-      <button id="order-another-button">Order Another?</button>
-    </div>
-    <h1 id="home-header">What do ye want t' drink today?</h1>
-    <div class="question-wrap">
-      <div class="drink-question">
-        <script id="question-template" type="text/template">
-          <p id="question">{{question}}</p> 
+<!DOCTYPE html><html lang="en"><head><script id="drink-template" type="text/template"><p id="drink">{{drink}}</p></script><script id="answer-template" type="text/template"><p id="answer">{{answer}}</p></script><meta charset="UTF-8"><link href="https://fonts.googleapis.com/css?family=IM+Fell+English+SC" rel="stylesheet"><title>Pirate Bartender</title><link href="style.css" rel="stylesheet"><script src="piratebartender.1.0.0.js"></script></head><body><div class="body-wrap"><div class="drink-output-background"></div><div class="drink-output"><h2>Drink it fast and order another!</h2><p id="your-drink">Just for you:</p><div id="drink"></div><button id="order-another-button">Order Another?</button></div><h1 id="home-header">What do ye want t' drink today?</h1><div class="question-wrap"><div class="drink-question"><script id="question-template" type="text/template"><p id="question">{{question}}</p> 
           <div class="buttons">
             <button id="yes-button" data-clicked="no">{{yesButton}}</button>
             <button id="no-button" data-clicked="no">{{noButton}}</button>
-          </div>
-        </script>
-        <div class="drink-being-made">
-          <p>Your Drink is being made</p>
-          <i class="fa fa-glass fa-3x animated infinite swing"></i>
-        </div>
-        <div class="thirsty-yet">
-          <p>Are ye thirsty?  Almost poured!</p>
-        </div>
-        <div class="the-drink">
-          
-        </div>
-        <div class="no-drink-being-made">
-          <p>You don't like anything! No Drink for you!</p>
-          <i class="fa fa-glass fa-4x"></i>
-        </div>
-      </div>
-     
-      <div class="answer-wrap">
-        <div class="the-answer-output"> 
-        </div>
-      </div>
-    </div>
-  </div>
-</body>
-</html>
+          </div></script><div class="drink-being-made"><p>Your Drink is being made</p><i class="fa fa-glass fa-3x animated infinite swing"></i></div><div class="thirsty-yet"><p>Are ye thirsty? Almost poured!</p></div><div class="the-drink"></div><div class="no-drink-being-made"><p>You don't like anything! No Drink for you!</p><i class="fa fa-glass fa-4x"></i></div></div><div class="answer-wrap"><div class="the-answer-output"></div></div></div></div></body></html>
