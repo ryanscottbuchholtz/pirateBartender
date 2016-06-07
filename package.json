@@ -23,7 +23,8 @@
     "clean:css": "rm -rf build/*.css build/*.css.map",
     "build:js": "npm run clean:js && webpack",
     "watch:js": "npm run build:js && webpack --watch",
-    "clean:js": "rm -f build/$npm_package_name.$npm_package_version.js build/$npm_package_name.$npm_package_version.js.map"
+    "clean:js": "rm -f build/$npm_package_name.$npm_package_version.js build/$npm_package_name.$npm_package_version.js.map",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -46,6 +47,7 @@
     "css-loader": "^0.23.1",
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.8.5",
+    "gh-pages": "^0.11.0",
     "html-webpack-plugin": "^2.19.0",
     "less": "^2.7.1",
     "less-loader": "^2.2.3",

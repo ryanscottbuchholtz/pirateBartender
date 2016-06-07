@@ -1,4 +1,5 @@
 var path = require('path');
+// var ghpages = require('gh-pages');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var webpack = require('webpack');
 var packageData = require('./package.json');
@@ -58,3 +59,5 @@ module.exports = {
     ]
   }
 };
+
+// ghpages.publish(path.join(__dirname, 'build'), callback);
