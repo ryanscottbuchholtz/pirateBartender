@@ -98,12 +98,13 @@ module.exports = {
   },
 
   orderAnother: function() {
+    var self = this;
     $('#order-another-button').click( function() {
       jackSparrow.questionPosition = 0;
       currentQuestion = jackSparrow.getNextQuestion();
-      this.hideStackedElements();
-      this.askQuestion();
-      this.checkResponse();
+      self.hideStackedElements();
+      self.askQuestion();
+      self.checkResponse();
     });
   },
 }
