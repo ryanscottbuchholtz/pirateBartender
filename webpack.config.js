@@ -1,23 +1,20 @@
 var path = require('path');
-
 var HtmlWebpackPlugin = require('html-webpack-plugin');
-
 var webpack = require('webpack');
-
 var packageData = require('./package.json');
-
 var filename = [packageData.name, packageData.version, 'js'];
-
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
-
 var CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     entry: {
       main: [
         path.resolve(__dirname, packageData.main),
-        path.resolve(__dirname, 'node_modules/font-awesome-webpack/font-awesome.config.js'),
-        path.resolve(__dirname, 'node_modules/animate-css-webpack/animate-css.config.js')
+        // 'font-awesome-webpack!./node_modules/font-awesome-webpack/font-awesome.config.js',
+        // 'animate-css-webpack!./node_modules/animate-css-webpack/animate-css.config.js',
+        // './app.js'
+        // path.resolve(__dirname, 'node_modules/font-awesome-webpack/font-awesome.config.js'),
+        // path.resolve(__dirname, 'node_modules/animate-css-webpack/animate-css.config.js')
       ]
     },
 
